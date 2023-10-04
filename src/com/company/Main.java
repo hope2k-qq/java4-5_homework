@@ -4,6 +4,8 @@ import com.company.task1.Human;
 import com.company.task2.City;
 import com.company.task3.Country;
 import com.company.task4.Fraction;
+import com.company.task5.Book;
+import com.company.task6.Car;
 
 import java.util.Scanner;
 
@@ -12,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int value = 0;
-        System.out.println("\nTask1 - 1\nTask2 - 2\nTask3 - 3\nTask4 - 4\n");
+        System.out.println("\nTask1 - 1\nTask2 - 2\nTask3 - 3\nTask4 - 4\nTask5 - 5\nTask6 - 6\n");
         System.out.print("Enter value: ");
         try{
             value = scanner.nextInt();
@@ -42,6 +44,7 @@ public class Main {
                 country.showDataCountry();
                 break;
             case 4:
+                System.out.println("Task 4");
                 Fraction fraction1 = new Fraction();
                 Fraction fraction2 = new Fraction();
                 Fraction result;
@@ -85,6 +88,20 @@ public class Main {
                         System.out.println("Error, enter the correct value!");
                         return;
                 }
+                break;
+            case 5:
+                System.out.println("Task 5");
+                Book book = new Book();
+                book.inputBook();
+                System.out.println("\nData book:");
+                book.showBook();
+                break;
+            case 6:
+                System.out.println("Task 6");
+                Car car = new Car();
+                car.inputCar();
+                System.out.println("\nData car:");
+                car.showCar();
                 break;
             default:
                 System.out.println("Error, enter the correct value!");

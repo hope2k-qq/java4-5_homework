@@ -21,6 +21,16 @@ public class Country {
         cities = new ArrayList<String>();
     }
 
+    public Country(String countryName, String continent, long population, int phoneCountryCode, String capital,
+                   List<String> cities) {
+        this.countryName = countryName;
+        this.continent = continent;
+        this.population = population;
+        this.phoneCountryCode = phoneCountryCode;
+        this.capital = capital;
+        this.cities = cities;
+    }
+
     public void inputCountry() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter country name: ");

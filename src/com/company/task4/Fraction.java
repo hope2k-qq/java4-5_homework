@@ -11,6 +11,17 @@ public class Fraction {
         denominator = 1;
     }
 
+    public Fraction(int numerator, int denominator) {
+        if (denominator != 0) {
+            this.numerator = numerator;
+            this.denominator = denominator;
+        } else {
+            System.out.println("The denominator cannot be zero!");
+            this.numerator = 0;
+            this.denominator = 1;
+        }
+    }
+
     public void inputFraction() {
         Scanner scanner = new Scanner(System.in);
 

@@ -23,6 +23,15 @@ public class Human {
         homeAddress = "";
     }
 
+    public Human(String fullName, Date birthDate, String contactPhone, String city, String country, String homeAddress) {
+        this.fullName = fullName;
+        this.birthDate = birthDate;
+        this.contactPhone = contactPhone;
+        this.city = city;
+        this.country = country;
+        this.homeAddress = homeAddress;
+    }
+
     public void inputHuman(){
         Scanner scanner = new Scanner(System.in);
 

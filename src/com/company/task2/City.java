@@ -20,6 +20,15 @@ public class City {
         phoneCodeCity = 0;
     }
 
+    public City(String cityName, String region, String country, long population, int postalIndexCity, int phoneCodeCity) {
+        this.cityName = cityName;
+        this.region = region;
+        this.country = country;
+        this.population = population;
+        this.postalIndexCity = postalIndexCity;
+        this.phoneCodeCity = phoneCodeCity;
+    }
+
     public void inputCity(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter city name: ");
